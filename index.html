@@ -7,15 +7,18 @@
     <title>Linoleum</title>
 
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body class="flex column bg-dark ">
 
     <div class="main-app flex column border-light bg-betweenColor">
         <!-- 1px = 1 in -->
         <h1 class="text-light">Estimated Linoleum needed: </h1>
+        <p class="title text-light"></p>
         <div class="container flex text-light">
             <div class="bedroom ">
-                <div class="bedroom-1 bg-emphasis border-light border-bottom-hidden" id="bedroom-1"></div>
+                <div class="bedroom-1 bg-emphasis border-light border-bottom-hidden" id="bedroom-1">
+                </div>
                 <div class="bedroom-2 bg-emphasis border-light border-bottom-hidden border-top-hidden border-right-hidden"></div>
                 <div class="bedroom-3 bg-emphasis border-light border-top-hidden"></div>
             </div>
@@ -41,8 +44,7 @@
     </div>
     <div class="margin-5px">
         <button onclick="print()">Print</button>
-        <button>Meters</button>
-        <button>Inches</button> 
+        <button class="toggle-button">Convert to inches</button>
     </div>
 
 </body>

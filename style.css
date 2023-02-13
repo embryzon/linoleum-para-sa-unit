@@ -1,0 +1,159 @@
+:root {
+    --light: #FFF;
+    --dark: #000;
+    --emphasis: rgba(255, 0, 0, 0.219);
+    --betweenColor: #333;
+    --zoom: 3;
+
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+body {
+    height: 100vh;
+    inset: 0;
+    overflow: hidden;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+p {
+    font-size: 0.5rem;
+}
+
+.main-app {
+    width: 1000px;
+    aspect-ratio: 16/9;
+}
+
+.container {
+    height: 100%;
+    zoom: var(--zoom);
+    -moz-transform: scale(var(--zoom));
+}
+
+.bedroom-1 {
+    height: 97.80px;
+    width: 77.90px;
+}
+
+.bedroom-2 {
+    height: 29.70px;
+    width: 77.90px;
+}
+
+.bedroom-3 {
+    height: 10.63px;
+    width: 77.90px;
+}
+
+.door-1 {
+    height: 97.80px;
+    width: 5.9px;
+}
+
+.door-2 {
+    height: 29.70px;
+    width: 5.9px;
+}
+
+.door-3 {
+    height: 10.63px;
+    width: 5.9px;
+}
+
+.living-1 {
+    height: 97.80px;
+    width: 44.50px;
+}
+
+.living-2 {
+    height: 29.70px;
+    width: 44.50px;
+}
+
+.living-3 {
+    height: 10.63px;
+    width: 44.50px;
+}
+
+.dining-1 {
+    height: 97.80px;
+    width: 56.27px;
+}
+.dining-2 {
+    height: 40.33px;
+    width: 56.27;
+}
+
+.kitchen-1 {
+    height: 97.80px;
+    width: 20.27px;
+}
+
+.kitchen-2 {
+    height: 40.33px;
+    width: 20.27px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.margin-5px {
+    margin: 5px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.border-light {
+    border: 1px solid var(--light);
+}
+
+.bg-betweenColor {
+    background-color: var(--betweenColor);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+.bg-emphasis {
+    background-color: var(--emphasis);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.border-top-hidden {
+    border-top: hidden;
+}
+
+.border-bottom-hidden {
+    border-bottom: hidden;
+}
+
+.border-left-hidden {
+    border-left: hidden;
+}
+
+.border-right-hidden {
+    border-right: hidden;
+}

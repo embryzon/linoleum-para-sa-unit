@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linoleum</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="flex column bg-dark ">
+
+    <div class="main-app flex column border-light bg-betweenColor">
+        <!-- 1px = 1 in -->
+        <h1 class="text-light">Estimated Linoleum needed: </h1>
+        <div class="container flex text-light">
+            <div class="bedroom ">
+                <div class="bedroom-1 bg-emphasis border-light border-bottom-hidden" id="bedroom-1"></div>
+                <div class="bedroom-2 bg-emphasis border-light border-bottom-hidden border-top-hidden border-right-hidden"></div>
+                <div class="bedroom-3 bg-emphasis border-light border-top-hidden"></div>
+            </div>
+            <div class="doorway">
+                <div class="door-1"></div>
+                <div class="door-2 bg-emphasis border-light border-left-hidden border-right-hidden"></div>
+                <div class="door-3"></div>
+            </div>
+            <div class="living ">
+                <div class="living-1 bg-emphasis border-light border-right-hidden border-bottom-hidden" id="living-1"></div>
+                <div class="living-2 bg-emphasis border-light border-top-hidden border-bottom-hidden border-left-hidden" id="living-2"></div>
+                <div class="living-3 bg-emphasis border-light border-top-hidden"></div>
+            </div>
+            <div class="dining">
+                <div class="dining-1 bg-emphasis border-light border-left-hidden border-right-hidden" id="dining-1"></div>
+                <div class="dining-2"></div>
+            </div>
+            <div class="kitchen">
+                <div class="kitchen-1 border-light bg-light" id="kitchen-1"></div>
+                <div class="kitchen-2"></div>
+            </div>
+        </div>
+    </div>
+    <div class="margin-5px">
+        <button onclick="print()">Print</button>
+        <button>Meters</button>
+        <button>Inches</button> 
+    </div>
+
+</body>
+</html>
